@@ -1,4 +1,4 @@
-import { Platform } from "react-native";
+import { Platform, useColorScheme } from "react-native";
 
 if (Platform.OS === "web") {
   import("../tamagui-web.css");
@@ -19,7 +19,6 @@ import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 
-import { useColorScheme } from "@/components/useColorScheme";
 import { TamaguiProvider } from "tamagui";
 import tamaguiConfig from "@/tamagui.config";
 
